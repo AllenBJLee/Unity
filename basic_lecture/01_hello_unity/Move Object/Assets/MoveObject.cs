@@ -6,6 +6,12 @@ public class MoveObject : MonoBehaviour
 {
     Vector3 m_vecTarget = new Vector3( 5, 0.25f, 0 );
 
+    RigidBody rigid;
+
+    private void Start() {
+        
+    }
+
     void Update( )
     {
         /// 01
@@ -13,7 +19,6 @@ public class MoveObject : MonoBehaviour
         Vector3 vecMoveWithKeypad = new Vector3( Input.GetAxis("Horizontal"), 
                                         Input.GetAxis("Vertical"),
                                         0 );
-
 
         /// 02
         /// 목표 지점으로 이동
